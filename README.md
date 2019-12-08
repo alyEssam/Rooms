@@ -11,10 +11,18 @@ Via tab bar controller you can choose between two view controllers : 1- Settings
 • AddUser View Controller: Displays the list of all registered accounts, and allows the user to select one of them.
 • Chat View Controller: Allows the users to send / receive messages to another registered account.
 The scenes are described in detail below.
+
+Welcome
+When the app first starts it will display a welcome screen with two ways to login.
+The First method by using user’s Facebook account, and the second by using his Google account.
+When the user choose any of those two buttons he will be navigate to his account login screen to login via it.
+This feature is based on Facebook API and Google API.
+
 ![Screen Shot 2019-12-08 at 11 38 34 PM](https://user-images.githubusercontent.com/46827335/70396752-6981be00-1a14-11ea-80d2-09d42f59531b.png)
 
 Settings
 The user can change his Display name from SettingsViewController.
+
 ![Screen Shot 2019-12-08 at 11 38 47 PM](https://user-images.githubusercontent.com/46827335/70396755-6d154500-1a14-11ea-8882-95a1f79c5455.png)
 
 Chats View Controller:
@@ -22,10 +30,12 @@ It displays the chats between user and his participants using customer TableView
 The user can see the profile picture, display name of his participant and also the messages between each others.
 IF the user select any message cell it navigates him to Chat View Controller.
 Also the user can add a new participant chat user by pressing the add user button in right navigation item, which navigates him to AddUsers to Chat View Controller.
+
 ![Screen Shot 2019-12-08 at 11 38 52 PM](https://user-images.githubusercontent.com/46827335/70396757-70a8cc00-1a14-11ea-85c5-099476d4a774.png)
 
 AddUsers Chat View Controller:
 It displays all registered users, when the user select any cell, which contains user profile picture, display name and email, it navigates him to Room View Controller.
+
 ![Screen Shot 2019-12-08 at 11 39 03 PM](https://user-images.githubusercontent.com/46827335/70396761-73a3bc80-1a14-11ea-87ee-fb54c68ff8a3.png)
 
 
@@ -35,5 +45,6 @@ The message customer cell displays the message which contains :
 - Display name of message’s sender.
 - The message Body.
 - The profile picture of message’s sender.
+
 ![Screen Shot 2019-12-08 at 11 41 56 PM](https://user-images.githubusercontent.com/46827335/70396762-769ead00-1a14-11ea-87d1-313e8293ff62.png)
 
